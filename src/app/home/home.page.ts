@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TabsPage } from '../pages/tabs/tabs.page';
 
 @Component({
   selector: 'app-home',
