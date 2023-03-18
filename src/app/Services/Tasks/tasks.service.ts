@@ -1,12 +1,19 @@
 import { Injectable } from '@angular/core';
-import {Task} from "../Models/task";
+import {Task} from "../../Models/task";
 @Injectable({
   providedIn: 'root'
 })
 export class TasksService {
 
   private tasks:Task[] =[];
-
+  createTask(id:number,nombre:string,estado:boolean):any{
+    try {
+      return new Task(id,nombre,estado);
+    } catch (error:any) {
+      throw new Error(error.message);
+    }
+  }
+  
   getTasks(){
     return this.tasks;
   }
