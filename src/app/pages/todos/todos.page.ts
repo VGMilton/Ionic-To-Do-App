@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AlertController } from '@ionic/angular';
 
 @Component({
   selector: 'app-todos',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TodosPage implements OnInit {
 
-  constructor() { }
+  constructor(private alertCtrl : AlertController) { }
 
   ngOnInit() {
   }
+
+
 
 }
