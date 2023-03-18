@@ -25,3 +25,17 @@
 #container a {
   text-decoration: none;
 }
+
+.todotab{
+  --background: #1e1e1e;
+  --background-focused: #2dd36f;
+  --background-focused-opacity: 1;
+  --color: #92949c;
+  --color-focused: #2dd36f;
+  --color-selected: #2dd36f;
+  --padding-bottom: 4px;
+  --padding-end: 4px;
+  --padding-start: 4px;
+  --padding-top: 4px;
+  --ripple-color: #28ba62;
+}

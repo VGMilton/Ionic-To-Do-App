@@ -6,6 +6,20 @@ const routes: Routes = [
   {
     path: '',
     component: HomePage,
+    children:[
+      {
+        path:'dashboard',
+        loadChildren:()=>import('../pages/dashboard/dashboard.module').then(m=>m.DashboardPageModule)
+      },
+      {
+        path:'todos',
+        loadChildren:()=>import('../pages/todos/todos.module').then(m=>m.TodosPageModule)
+      },
+      {
+        path:'completed',
+        loadChildren:()=>import('../pages/completed/completed.module').then(m=>m.CompletedPageModule)
+      }
+    ]
   }
 ];
 

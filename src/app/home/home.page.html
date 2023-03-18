@@ -1,21 +1,19 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      To-Do
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-tabs>
+  <ion-tab-bar>
+    <ion-tab-button tab="dashboard" class="todotab">
+      <ion-icon name="cube-outline"></ion-icon>
+      <ion-label>Dashboard</ion-label>
+    </ion-tab-button>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
-</ion-content>
-<app-tabs></app-tabs>
+    <ion-tab-button tab="todos" class="todotab">
+      <ion-icon name="clipboard-outline"></ion-icon>
+      <ion-label>To-Do</ion-label>
+    </ion-tab-button>
+    
+    <ion-tab-button tab="completed" class="todotab">
+      <ion-icon name="checkbox-outline"></ion-icon>
+      <ion-label>Completed</ion-label>
+    </ion-tab-button>
+  
+  </ion-tab-bar>
+</ion-tabs>
